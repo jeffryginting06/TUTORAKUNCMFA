@@ -49,19 +49,17 @@ proxies:
         Host: vmess-sg05.gproxy.pro
     udp: true
   - name: AKUN2
-    server: quiz.int.vidio.com
+    server: tro-sg04.gproxy.pro
     port: 443
-    type: vless
-    uuid: 9cf9a9b0-2e2e-45bd-ac6f-5eaa44e30cfe
-    cipher: auto
-    tls: true
+    type: trojan
+    password: 83204542-c507-4687-9b92-b3cd12e2e6dc
     skip-cert-verify: true
-    servername: id1vless.ipservers.xyz
+    sni: token-media-vidio-com.akamaized.net
     network: ws
     ws-opts:
-      path: /jagoanssh
+      path: /trojan
       headers:
-        Host: id1vless.ipservers.xyz
+        Host: tro-sg04.gproxy.pro
     udp: true
   - name: AKUN3
     server: quiz.int.vidio.com
