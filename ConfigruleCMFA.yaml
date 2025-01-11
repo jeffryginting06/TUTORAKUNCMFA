@@ -49,7 +49,7 @@ proxies:
         Host: vmess-sg05.gproxy.pro
     udp: true
 - name: AKUN2
-    server: tro-sg04.gproxy.pro
+    server: 
     port: 443
     type: trojan
     password: 83204542-c507-4687-9b92-b3cd12e2e6dc
@@ -59,7 +59,7 @@ proxies:
     ws-opts:
       path: /trojan
       headers:
-        Host: tro-sg04.gproxy.pro
+        Host: 
    udp: true   
 - name: AKUN3
     server: tro-sg04.gproxy.pro
