@@ -56,8 +56,6 @@ proxy-groups:
     interval: 300
     proxies:
       - AKUN1
-      - AKUN2
-      - AKUN3
 
   - name: MIX-X
     type: fallback
@@ -65,8 +63,6 @@ proxy-groups:
     interval: 300
     proxies:
       - AKUN1
-      - AKUN2
-      - AKUN3
       
   - name: IKLAN
     type: select
