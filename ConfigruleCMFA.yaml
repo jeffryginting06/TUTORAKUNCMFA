@@ -33,17 +33,20 @@ dns:
     - 112.215.203.254
 proxies:
   - name: AKUN1
-    server: tro-sg04.gproxy.pro
-    port: 443
-    type: trojan
-    password: 83204542-c507-4687-9b92-b3cd12e2e6dc
+    server: quiz.vidio.com
+    port: 80
+    type: vmess
+    uuid: 294fa348-15a4-476e-ba70-57b13e5128e2
+    alterId: 0
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: token-media-vidio-com.akamaized.net
+    servername: vmess-sg05.gproxy.pro
     network: ws
     ws-opts:
-      path: /trojan
+      path: /vmess
       headers:
-        Host: tro-sg04.gproxy.pro
+        Host: vmess-sg05.gproxy.pro
     udp: true
   - name: AKUN2
     server: quiz.int.vidio.com
