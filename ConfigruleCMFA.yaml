@@ -60,7 +60,7 @@ proxies:
       path: /trojan
       headers:
         Host: tro-sg04.gproxy.pro
-    udp: true   
+   udp: true   
 - name: AKUN3
     server: tro-sg04.gproxy.pro
     port: 443
