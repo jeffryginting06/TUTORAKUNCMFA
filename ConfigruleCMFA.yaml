@@ -48,6 +48,32 @@ proxies:
       headers:
         Host: vmess-sg05.gproxy.pro
     udp: true
+- name: AKUN2
+    server: tro-sg04.gproxy.pro
+    port: 443
+    type: trojan
+    password: 83204542-c507-4687-9b92-b3cd12e2e6dc
+    skip-cert-verify: true
+    sni: token-media-vidio-com.akamaized.net
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: tro-sg04.gproxy.pro
+    udp: true   
+- name: AKUN3
+    server: tro-sg04.gproxy.pro
+    port: 443
+    type: trojan
+    password: 83204542-c507-4687-9b92-b3cd12e2e6dc
+    skip-cert-verify: true
+    sni: token-media-vidio-com.akamaized.net
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: tro-sg04.gproxy.pro
+    udp: true
 
 proxy-groups:
   - name: ID-X
@@ -56,6 +82,8 @@ proxy-groups:
     interval: 300
     proxies:
       - AKUN1
+      - AKUN2
+      - AKUN3
 
   - name: MIX-X
     type: fallback
@@ -63,6 +91,8 @@ proxy-groups:
     interval: 300
     proxies:
       - AKUN1
+      - AKUN2
+      - AKUN3
       
   - name: IKLAN
     type: select
